@@ -156,7 +156,7 @@ body {
 .header {
   height: 800px;
   margin-bottom: 35px;
-  padding-top: 45px;
+  padding-top: 40px;
   background-image: url(../img/intro-bg.jpg);
   background-repeat: no-repeat;
   background-color: #20201F;
@@ -197,7 +197,7 @@ body {
 
 .products__content {
   width: 50%;
-  padding: 152px 48px 107px 84px;
+  padding: 110px 48px 107px 84px;
 }
 
 .products__title {
@@ -206,7 +206,12 @@ body {
 }
 
 .products__text {
-  margin-bottom: 69px;
+  margin-bottom: 80px;
+}
+
+.button__pruduct {
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .button__products {
@@ -248,7 +253,7 @@ body {
 }
 
 .collection__content {
-  margin-bottom: 98px;
+  margin-bottom: 90px;
   width: 60%;
 }
 
@@ -259,7 +264,7 @@ body {
 .collection__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
+  margin-bottom: 90px;
 }
 
 .collection__item {
@@ -272,6 +277,7 @@ body {
 
 .collection__image-right {
   width: 40%;
+  transform: translateY(110px);
 }
 
 .collection__image-left {
@@ -285,7 +291,7 @@ body {
 }
 
 .collection__pict {
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .show-more {
@@ -349,7 +355,7 @@ body {
 
 .find-dealer__content {
   width: 50%;
-  padding: 123px 102px 10px 84px;
+  padding: 118px 102px 10px 84px;
 }
 
 .find-dealer__pict {
@@ -357,7 +363,7 @@ body {
 }
 
 .find-dealer__title {
-  margin-bottom: 51px;
+  margin-bottom: 50px;
   max-width: 258px;
 }
 
@@ -368,7 +374,7 @@ body {
 .dealer-input {
   display: block;
   margin-bottom: 37px;
-  padding: 20px 23px;
+  padding: 20px 23px 18px;
   width: 323px;
   font-family: inherit;
   font-size: 19px;
@@ -384,7 +390,7 @@ body {
 }
 
 .dealer-button {
-  display: block;
+  display: inline-block;
 }
 
 /* Terrace */
@@ -392,7 +398,7 @@ body {
 .terrace {
   position: relative;
   background-color: #20201F;
-  padding-top: 116px;
+  padding-top: 105px;
   padding-bottom: 122px;
   text-align: center;
   color: #E5E2DE;
@@ -402,11 +408,13 @@ body {
   position: relative;
   max-width: 850px;
   margin: 0 auto;
-  margin-bottom: 129px;
+  margin-bottom: 124px;
+  line-height: 100px;
   z-index: 1;
 }
 
 .button__terrace {
+  padding: 13px 48px;
   color: #E5E2DE;
   border: 1px solid #E5E2DE;
 }
@@ -457,15 +465,24 @@ body {
   background-color: #F7F7F7;
 }
 
+.become-dealer__title {
+  margin-bottom: 66px;
+}
+
 .become-dealer__text {
   margin-bottom: 62px;
+}
+
+.become-dealer-button {
+  display: inline-block;
+  padding: 15px 42px;
 }
 
 
 /* Subscribe */
 
 .subscribe {
-  padding: 60px 84px;
+  padding: 60px 84px 52px;
   background-color: #E5E2DE;
 }
 
@@ -482,8 +499,6 @@ body {
 
 .subscribe__group {
   margin-left: auto;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .subscribe__label {
@@ -495,7 +510,7 @@ body {
 
 .subscribe__email {
   display: block;
-  margin-top: 23px;
+  margin-top: 16px;
   width: 342px;
   height: 62px;
   padding: 15px;
@@ -517,12 +532,21 @@ body {
   align-self: flex-start;
 }
 
+input[type=checkbox] {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  accent-color: #8B8B8B;
+}
+
 /* Footer */
 
 .footer {
   padding: 74px 84px;
   background-color: #20201F;
   color: #E5E2DE;
+  text-transform: lowercase;
 }
 
 .footer__wrapper {
@@ -530,23 +554,23 @@ body {
 }
 
 .footer__logo {
-  width: 20%;
+  width: 22%;
 }
 
 .footer__content {
   margin-left: auto;
-  width: 80%;
+  width: 78%;
 }
 
 .footer-navigation {
   display: grid;
-  grid-template-columns: auto auto 1fr 1fr 1fr;
-  column-gap: 36px;
-  margin-bottom: 56px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 28px;
+  margin-bottom: 60px;
 }
 
 .footer-navigation__item:first-child {
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .footer-navigation__link:hover {
@@ -557,6 +581,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__info-link {
+  font-size: 15px;
+  line-height: 19px;
 }
 
 .footer__info-link:hover {
