@@ -564,7 +564,7 @@ input[type=checkbox] {
 
 .footer-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 28px;
   margin-bottom: 60px;
 }
